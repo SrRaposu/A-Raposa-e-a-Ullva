@@ -3,74 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Raposa & A Uva</title>
+  <title>A Raposa e a Ullva</title>
   <style>
-    body { margin:0;padding:0;font-family:'Georgia', serif;background:#fdf6f9;color:#5a3d3d;line-height:1.6; }
-    header { text-align:center;padding:60px 20px 20px; }
-    header h1 { font-family:'Brush Script MT', cursive;font-size:3.5em;color:#7c3a55; }
-    .intro { text-align:center;font-size:1.2em;font-style:italic;max-width:700px;margin:0 auto 50px; }
-    section { padding:40px 20px;max-width:900px;margin:auto; }
-    h2 { text-align:center;font-family:'Georgia', serif;color:#7c3a55;font-size:2em;margin-bottom:30px; }
-    .characters { display:flex;flex-wrap:wrap;justify-content:space-around;gap:40px; }
-    .character { text-align:center;max-width:350px; }
-    .character img { width:150px;height:auto;border-radius:12px;margin-bottom:10px; }
-    .gallery { display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px; }
-    .gallery img { width:200px;height:auto;border-radius:10px; }
-    .poem { text-align:center;background-color:#fce8ef;border-left:6px solid #c1788e;padding:30px;border-radius:10px;font-style:italic; }
-    footer { text-align:center;font-size:0.9em;color:#a97d7d;padding:20px;margin-top:40px; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #fffaf5 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+      margin: 0;
+      padding: 0;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #f7e3e2;
+      padding: 50px 20px;
+      text-align: center;
+      background-image: url('https://i.pinimg.com/originals/e6/e1/54/e6e154a72b6aa0aa1f6a63146446a0c6.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    header p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #7c3a55;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+    .characters, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .character {
+      text-align: center;
+      max-width: 300px;
+    }
+    .character img, .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .quote {
+      margin: 50px auto;
+      padding: 20px;
+      background: #fef1ec;
+      border-left: 5px solid #db7093;
+      font-style: italic;
+      max-width: 600px;
+      text-align: center;
+    }
+    footer {
+      background: #f3dcdc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    .side-decor {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      background-size: contain;
+      background-repeat: repeat-y;
+      z-index: -1;
+    }
+    .side-left {
+      left: 0;
+      background-image: url('raposa 2.png');
+    }
+    .side-right {
+      right: 0;
+      background-image: url('ulli 4.png');
+    }
+    .divider {
+      width: 60%;
+      margin: 40px auto;
+      height: 2px;
+      background: #d9a6a6;
+      border-radius: 5px;
+    }
   </style>
 </head>
 <body>
+  <div class="side-decor side-left"></div>
+  <div class="side-decor side-right"></div>
 
   <header>
-    <h1>A Raposa & A Uva</h1>
-    <p class="intro">
-      Um encontro improvável. Um desejo velado.<br>
-      Ela, silvestre e livre. Ele, delicado e distante.<br>
-      Entre eles, o espaço de um sonho — e a eternidade de um olhar.
-    </p>
-    <img src="https://i.etsystatic.com/1662649/r/il/6c7beb/1662649/il_570xN.1662649223_q2xr.jpg" alt="Raposa e uva" style="border-radius:12px; max-width:250px;">
+    <h1>A Raposa e a  Ullva</h1>
+    <p>Um romance suave entre folhas, sombras e desejos doces.</p>
   </header>
 
   <section>
-    <h2>Eles</h2>
+    <h2>A Raposa e sua Ullva</h2>
     <div class="characters">
       <div class="character">
-        <img src="https://i.etsystatic.com/1662649/r/il/6c7beb/1662649/il_570xN.1662649223_q2xr.jpg" alt="Raposa">
+        <img src="raposa 2.png" alt="Raposa Sonhadora">
         <h3>A Raposa</h3>
-        <p>De pelos em brasa e passos suaves, ela carrega o instinto e o mistério. Tudo nela dança entre o orgulho e a ternura.</p>
+        <p>Ama sua ullva, e não viveria sem o gosto de de seu fruto </p>
       </div>
       <div class="character">
-        <img src="https://i.etsystatic.com/1662649/r/il/6c7beb/1662649/il_570xN.1662649223_q2xr.jpg" alt="Uva">
+        <img src="ulli 4.jpg" alt="Cacho de Uvas Romântico">
         <h3>A Uva</h3>
-        <p>Tão doce quanto o desejo que desperta. Madura na espera, envelhece em paciência, oferecia um amor que talvez nunca se toque.</p>
+        <p>Amorosa, linda, e uma ullvinha q depende da proteção de sua Rapoasa </p>
       </div>
     </div>
   </section>
+
+  <div class="divider"></div>
 
   <section>
     <h2>Galeria de Sentimentos</h2>
     <div class="gallery">
-      <img src="https://i.etsystatic.com/1662649/r/il/6c7beb/1662649/il_570xN.1662649223_q2xr.jpg" alt="Raposa artística">
-      <img src="https://i.etsystatic.com/1662649/r/il/6c7beb/1662649/il_570xN.1662649223_q2xr.jpg" alt="Uvas delicadas">
+      <img src="https://i.pinimg.com/originals/38/4e/d4/384ed46875f720ad43766f68dfc19e61.jpg" alt="Raposa e Uvas aquarela">
+      <img src="https://i.pinimg.com/originals/4f/13/2d/4f132d74065bacc3fae47e7aa1bcfd45.jpg" alt="Raposa pulando">
+      <img src="https://i.pinimg.com/originals/5d/f4/02/5df402b17e4dc3bb6e75b6e3401f0919.jpg" alt="Vinhedo ilustrado">
+      <img src="https://i.pinimg.com/originals/39/ff/70/39ff70e9c82e7cf1b61d7c17269c7bfc.jpg" alt="Cena suave">
+      <img src="ulli 2.jpg" alt="Foto da galeria pessoal">
     </div>
   </section>
 
   <section>
-    <h2>Entre folhas e desejos</h2>
-    <div class="poem">
-      Ela não queria comer a uva.<br>
-      Queria admirá-la no silêncio das tardes lilases,<br>
-      onde o tempo para, e tudo que resta é o querer.<br><br>
-      A uva também não pedia para ser colhida.<br>
-      Apenas queria ser olhada como se fosse poema,<br>
-      e não apenas fruto.
-    </div>
+    <h2>Entre as folhas e o tempo</h2>
+    <p>Talvez o amor seja como as uvas maduras: exige espera, distância e o desejo sincero de alcançar. Talvez a raposa saiba disso. Ou talvez o simples olhar seja o suficiente para transformar o querer em beleza.</p>
+  </section>
+
+  <div class="quote">
+    "Mesmo sem tocar, ela sentia o calor da raposa sob a sombra da videira."
+  </div>
+
+  <section>
+    <h2>Encontro ao Entardecer</h2>
+    <p>Enquanto a tarde dourava o campo, a raposa descansava sob uma parreira. E ali, sem palavras, a uva amadurecia só para ela. Um silêncio cheio de promessas doces e paciência fértil.</p>
+    <img src="ulli 2.jpg" alt="Raposa e Uvas ao entardecer" style="width:100%; border-radius:12px; margin-top:20px;">
   </section>
 
   <footer>
-    &copy; 2025 A Raposa & A Uva. Um projeto de poesia visual.
+    <p>&copy; 2025 - Uma criação inspirada nas emoções entre a Raposa & a Uva.</p>
   </footer>
-
 </body>
 </html>
