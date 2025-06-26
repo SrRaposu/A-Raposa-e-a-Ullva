@@ -95,11 +95,57 @@
       background: #d9a6a6;
       border-radius: 5px;
     }
+    .music-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    #bg-music {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div class="side-decor side-left"></div>
   <div class="side-decor side-right"></div>
+
+  <!-- Ícone personalizado para controle da música -->
+  <img src="uva.png" alt="Play Music" class="music-icon" onclick="document.getElementById('bg-music').play()">
+
+  <audio id="bg-music" autoplay>
+    <source src="pela luz dos olhos teus.mp3" type="audio/mpeg">
+    <source src="terceira musica.mp3" type="audio/mpeg">
+    <source src="segunda musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const musicas = [
+      "pela luz dos olhos teus.mp3",
+      "terceira musica.mp3",
+      "segunda musica.mp3"
+    ];
+
+    let atual = 0;
+    const player = document.getElementById("bg-music");
+
+    function tocarProxima() {
+      atual = (atual + 1) % musicas.length;
+      player.src = musicas[atual];
+      player.play();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      player.src = musicas[atual];
+      player.volume = 0.2;
+    });
+
+    player.addEventListener("ended", tocarProxima);
+  </script>
 
   <header>
     <h1>A Raposa e a  Ullva</h1>
@@ -125,29 +171,29 @@
   <div class="divider"></div>
 
   <section>
-    <h2>Noise</h2>
+    <h2>Alguns de nossos tempinhos</h2>
     <div class="gallery">
       <img src="eu i ulli.png" alt="noise">
       <img src="eui i ulli 2.png" alt="Raposa pulando">
       <img src="eu i ulli 3.png" alt="Vinhedo ilustrado">
-      <img src="https://i.pinimg.com/originals/39/ff/70/39ff70e9c82e7cf1b61d7c17269c7bfc.jpg" alt="Cena suave">
-      <img src="ulli 2.jpg" alt="Foto da galeria pessoal">
+      <img src="eu i ulli 4.png" alt="Cena suave">
+      <img src="eu i ulli 5.png" alt="Foto da galeria pessoal">
     </div>
   </section>
 
   <section>
-    <h2>Entre as folhas e o tempo</h2>
-    <p>Talvez o amor seja como as uvas maduras: exige espera, distância e o desejo sincero de alcançar. Talvez a raposa saiba disso. Ou talvez o simples olhar seja o suficiente para transformar o querer em beleza.</p>
+    <h2>Por que eu te amo hein</h2>
+    <p>Com certeza é por conta de: seus olhos, seu sorriso, seu rostinho, seu corpinho, seu cabelinho, sua mãozinha, seu pezinho, seu cheiro, sua pele, seu cuidado, sua preocupação, seu ciúmes muito controlado, seu amor por mim, seu amor por minha família, seu interesse em estar comigo, sua saudade, seus beijinhos, suas declarações, seus "eu te amo", seus "boa noite", suas risadas, seus aúdios, sua voz,suas cartas, seus presentes, seu modo de andar, seu modo de olhar pra mim, tudo, tudo me faz te amar.</p>
   </section>
 
   <div class="quote">
-    "Mesmo sem tocar, ela sentia o calor da raposa sob a sombra da videira."
+    Sem Ulli não existe mais Renan, e sem Renan não existe mais Ulli
   </div>
 
   <section>
-    <h2>Encontro ao Entardecer</h2>
-    <p>Enquanto a tarde dourava o campo, a raposa descansava sob uma parreira. E ali, sem palavras, a uva amadurecia só para ela. Um silêncio cheio de promessas doces e paciência fértil.</p>
-    <img src="ulli 2.jpg" alt="Raposa e Uvas ao entardecer" style="width:100%; border-radius:12px; margin-top:20px;">
+    <h2>Até o infinito e além</h2>
+    <p>Vou te amar hoje, te amar amanhã, te amar quando nos casarmos, te amar quando tivermos o nosso primeiro filho, te amar quando tivermos nossa primeira discurssão, te amar quando tivermos nossa primeira viagem, te amar quando tivermos nossa primeira reunião na escola de nosso filho, te amar quando tivermos no nosso primeiro aniversário de casados, te amar na primeira vez que o nosso filho andar, te amar na primeira vez que formos a igreja como família, te amar na primeira vez que ouvirmos o nosso filho cantar seu primeiro mpb, te amar quando ja tivermos 50 anos e felizes vivendo como se fosse a primeira vez, te amar quando nosso filho passar na faculdade, te amar quando nosso filho nos der um netinho, te amar quando formos na nossa primeira viagem com a nossa família, te amar quando ja tivermos bem velhinhos e cantar as músicas que me lembram você, e te amar até o infinito e além.</p>
+    <img src="ulli.jpg" alt="Raposa e Uvas ao entardecer" style="width:100%; border-radius:12px; margin-top:20px;">
   </section>
 
   <footer>
